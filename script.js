@@ -26,3 +26,17 @@ if (motUtilisateur === listeMots[2]) {
 
 // Affichage du score de l'utilisateur
 console.log("Votre score est de " + score + " sur 3")
+
+
+
+const listMot = ["Cachalot", "Pétunia", "Serviette"];
+let score = 0;
+
+for (i = 0; i < listMot.length; i++) {
+  let mot = prompt("Taper un mot contenu dans le tableau:" + listMot[i]);
+
+  if (mot === listMot[i]) {
+    score++;
+  }
+}
+console.log("Votre score est : " + score);
